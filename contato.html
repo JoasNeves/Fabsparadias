@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <html lang="pt-BR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+    <title>Fabecio Paradias</title>
+</head>
+
+<body>
+    <header>
+        <section class="titulo">
+            <img src="img/Icon.png" alt="Icone de pão" class="icone">
+            <h1>Padaria Fabs, a confeiteria</h1>
+        </section>
+        <section class="menu">
+            <ul class="menu">
+                <li><a href="index.html" class="links">Inicio</a></li>
+                <li><a href="produtos.html" class="links">Produtos</a></li>
+                <li><a href="evento.html" class="links">Eventos</a></li>
+                <li><a href="contato.html" class="links">Contato</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section class="instrucao">
+            <h2 class="instrucao_titulo">Entre em contato com A padaria Fabs, a Confeiteria</h2>
+        </section>
+        <section class="infos">
+            <div class="list__infos">
+                <input type="radio" id="contactChoice1" name="contact" value="email" checked>
+                <label for="Choice1">Email</label>
+                <input type="radio" id="contactChoice2" name="contact" value="phone">
+                <label for="Choice2">Telefone</label>
+                <input type="radio" id="contactChoice3" name="contact" value="mail">
+                <label for="Choice3">Mail</label>
+            </div>
+            <ul class="email">
+                <input type="text" name="nome" id="email" placeholder="Seu Nome e Sobrenome vem aqui :D">
+                <input type="email" name="emailue" id="email" placeholder="Seu email vem aqui :D">
+                <input type="button" name="botao" id="mim" value="Envie para mim" onclick="msg()">
+            </ul>
+            <script src="index.js"></script>
+        </section>
+        <section>
+            <div class="contagem">
+                <p>Ainda não esta fucionando</p>
+            </div>
+        </section>
+        <section class="burro">
+            <div class="burro">
+                <p> Aviso: Suas informações serão roubadas e vendidas para o governo, por favor prossiga com idiotice,
+                    pão.😎</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div>
+            <img src="img/Icon.png" alt="Logo">
+            <p class="texto_rodape">Padaria Fabs</p>
+        </div>
+        <div>
+            <p class="patrocinador">Um oferecimento S3nha.</p>
+            <a href="https://twitter.com/OYoyatsu" class="twitter"></a>
+            <a href="https://www.reddit.com/user/NinezliaT"><img src="img/rosto.png" alt="rosto estranho do Fabs"
+                    class="rosto"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
