@@ -18,6 +18,7 @@
         <section class="titulo">
             <img src="img/Icon.png" alt="Icone de pão" class="icone">
             <h1>Padaria Fabs, a confeiteria</h1>
+            <a href="lista.html" class="lista"><img src="img/loja.png" alt="imagem de loja" class="icone" class="icone__loja"></a>
         </section>
         <section class="menu">
             <ul class="menu">
@@ -27,46 +28,65 @@
                 <li><a href="contato.html" class="links">Contato</a></li>
             </ul>
         </section>
+
     </header>
     <main class="lojinha">
         <div class="eventos_discricao">
             <h2 class="titulo">Os Melhores produtos, de qualidade, diferente do site o pão é bom mesmo :D.</h2>
         </div>
-        <section class="produtos">
-            <div class="produto"><img src="img/20221204_180655.jpg" alt="pao" class="produto_base_img">
-                <p class="produto_descricao">Pãozinho igual da mãe</p>
-                <p class="money">R$10,99</p>
-                <input type="button" value="Comprar Produto :D" class="comprar_produto" onclick="comprou()">
-            </div>
-            <div class="produto"><img src="img/-hatsune-miku-clay-charms.jpg" alt="" class="produto_base_img">
-                <p class="produto_descricao">HatsuneCuuck</p>
-                <p class="money">R$15,99</p>
-                <input type="button" value="Comprar Produto :D" class="comprar_produto" onclick="comprou()">
-            </div>
-            <div class="produto"><img src="img/Torta-Maca-01-1920x1442.jpg" alt="" class="produto_base_img">
-                <p class="produto_descricao">Tortinha Bolada</p>
-                <p class="money">R$32,99</p>
-                <input type="button" value="Comprar Produto :D" class="comprar_produto" onclick="comprou()">
-            </div>
-            <div class="produto"><img src="img/pu3o18gzn5851.png" alt="" class="produto_base_img">
-                <p class="produto_descricao">Biscoitinho hum hum.</p>
-                <p class="money">R$9,99</p>
-                <input type="button" value="Comprar Produto :D" class="comprar_produto" onclick="comprou()">
-            </div>
-            <div class="produto"><img src="img/vender-coxinha-1200x900.jpg" alt="" class="produto_base_img">
-                <p class="produto_descricao">AQUELA COIXINHA</p>
-                <p class="money">R$4,80</p>
-                <input type="button" value="Comprar Produto :D" class="comprar_produto" onclick="comprou()">
-            </div>
-            <div class="produto"><img src="img/1n6r.jpg" alt="" class="produto_base_img">
-                <p class="produto_descricao">A HATSUNEMIKU</p>
-                <p class="money">R$999,99</p>
-                <input type="button" value="Comprar Produto :D" class="comprar_produto" onclick="comprou()">
+        <section class="produtos" >
+                    <div class="produto"><img src="img/20221204_180655.jpg" alt="pao" class="produto_base_img">
+                        <p class="produto_descricao">Pãozinho igual da mãe</p>
+                        <p class="money">R$10,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto"  id='comprarpao'>
+                    </div>
+                    <div class="produto"><img src="img/-hatsune-miku-clay-charms.jpg" alt="" class="produto_base_img">
+                        <p class="produto_descricao">HatsuneCuuck</p>
+                        <p class="money">R$15,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto"  id="comprarcuuk">
+                    </div>
+                    <div class="produto"><img src="img/Torta-Maca-01-1920x1442.jpg" alt="" class="produto_base_img">
+                        <p class="produto_descricao">Tortinha Bolada</p>
+                        <p class="money">R$32,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto" id="comprartorta">
+                    </div>
+                    <div class="produto" swiper-slide><img src="img/pu3o18gzn5851.png" alt="" class="produto_base_img">
+                        <p class="produto_descricao">Biscoitinho hum hum.</p>
+                        <p class="money">R$9,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto" id="comprarbiscoito">
+                    </div>
+                    <div class="produto"><img src="img/vender-coxinha-1200x900.jpg" alt="" class="produto_base_img">
+                        <p class="produto_descricao">AQUELA COIXINHA</p>
+                        <p class="money">R$4,80</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto" id="comprarcoixinha">
+                    </div>
+                    <div class="produto"><img src="img/1n6r.jpg" alt="" class="produto_base_img">
+                        <p class="produto_descricao">A HATSUNEMIKU</p>
+                        <p class="money">R$999,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto" id="comprarmiku">
+                    </div>
+                    <div class="produto"><img src="img/cao1.JPG" alt="" class="produto_base_img">
+                        <p class="produto_descricao">Cachorro estranho</p>
+                        <p class="money">R$11,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto" id="cao1">
+                    </div>
+                    <div class="produto"><img src="img/Anime-hatsune-miku-anima-o-perif-rica-figura-modelo-de-capa-dura-lbum-cart-o-de.jpg_Q90.jpg_.png" alt="" class="produto_base_img">
+                        <p class="produto_descricao">Album da Hatsune Miku</p>
+                        <p class="money">R$90,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto" id="mikuAlbum">
+                    </div>
+                    <div class="produto"><img src="img/rivotriur.JPG" alt="" class="produto_base_img">
+                        <p class="produto_descricao">Rivotriu</p>
+                        <p class="money">R$9,99</p>
+                        <input type="button" value="Comprar Produto :D" class="comprar_produto" id="cao2">
+                    </div>
+                  
+                </div>
             </div>
         </section>
-        <script src="index.js"></script>
-
+        <script src="produto.js"></script>         
     </main>
+ 
     <footer class="rodape">
         <div>
             <img src="img/Icon.png" alt="Logo">
@@ -75,8 +95,9 @@
         <div>
             <p class="patrocinador">Um oferecimento S3nha.</p>
             <a href="https://twitter.com/OYoyatsu" class="twitter"></a>
-            <a href="https://www.reddit.com/user/NinezliaT"><img src="img/rosto.png" alt="rosto estranho do Fabs"
+            <a href="https://www.instagram.com/rivomeu/"><img src="img/rosto.png" alt="rosto estranho do Fabs"
                     class="rosto"></a>
         </div>
     </footer>
+
 </body>

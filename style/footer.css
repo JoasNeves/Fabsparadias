@@ -1,0 +1,53 @@
+
+.rodape{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url("../img/rodapemiku.png");
+    background-position: 50%;
+}
+.texto_rodape{
+    display: flex;
+    justify-self: baseline;
+    font-family: var(--fonte-titulo);
+}
+.patrocinador{
+    margin: 12px 12px 12px 12px;
+    font-size: 24px;
+}
+.twitter{
+    content: url("../img/ramona_icon_default.png");
+}
+.rosto{
+    margin: 12px 12px 12px 12px;
+    width: 15%;
+    height: 15%;
+}
+@media screen and (max-width: 414px) {
+    .rodape{
+        font-size: 24px;
+        display: block;
+        justify-content: space-between;
+        background: url("../img/rodapemiku.png");
+        background-position: 50%;
+    }
+    .rosto{
+        margin: 0;
+        width: 40%;
+        height: 42%;
+    }
+    .texto_rodape{
+        display: flex;
+        justify-self: baseline;
+        font-family: var(--fonte-titulo);
+    }
+    .patrocinador{
+        margin: 12px 12px 12px 12px;
+        font-size: 24px;
+    }
+    .twitter{
+        content: url("../img/ramona_icon_default.png");
+    }
+    
+}

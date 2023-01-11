@@ -1,11 +1,8 @@
-var x = 0;
-
-
+let x = 0;
 function msg() {
     x+=1;
-    alert("Você clicou no botão! Clicaram "+x+" Vezes no botão.");
+    alert("Você clicou no botão! " + x + " Clicaram Vezes no botão.");
 }
 
-function comprou(){
-    alert("Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro:Erro");
-}
+document.querySelector('.mim').onclick = msg;
+

@@ -1,3 +1,7 @@
+@import url(style/header.css);
+@import url(style/footer.css);
+@import url(style/carrossel.css);
+
 :root{
     --color-menu: #92E5FF;
     --color-fundo: rgba(146, 229, 255, 0.47);
@@ -8,66 +12,7 @@
 body{
     background: var(--color-fundo);
 }
-header{
-    background-color: var(--color-menu);
-    padding: 8px;
-}
 
-.titulo{
-    display: flex;
-    font-family: var(--fonte-titulo);
-    font-size: 48px;
-    align-self: baseline;
-}
-.icone{
-    margin:0 18px 0 7px;
-}
-.menu{
-    display: flex;
-    flex-direction: line;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.menu ul{
-    list-style-type: none;
-}
-.menu li{
-    display: inline;
-    margin: 0 12px 0 12px;
-}
-.menu a:hover{
-    color: #008cff;
-}
-.links{
-    font-size: 40px;
-}
-@media screen and (max-width: 414px) {
-    header{
-        padding: 18px;
-    }
-    .titulo{
-        margin: 0 0 12px 0;
-    }
-    .menu{
-        display: block;
-        justify-content: flex-start;
-    }
-    .menu li{
-        display: block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        background-color: var(--color-fundo);
-    }
-    .menu a{
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-    }
-
-}
 .cartaz{
     display: grid;
     grid-template-columns: 50% 1fr ;
@@ -118,45 +63,7 @@ header{
         display: none;
     }
 }
-.rodape{
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: url(img/rodapemiku.png);
-    background-position: 50%;
-}
-.texto_rodape{
-    display: flex;
-    justify-self: baseline;
-    font-family: var(--fonte-titulo);
-}
-.patrocinador{
-    margin: 12px 12px 12px 12px;
-    font-size: 24px;
-}
-.twitter{
-    content: url(img/ramona_icon_default.png);
-}
-.rosto{
-    margin: 12px 12px 12px 12px;
-    width: 15%;
-    height: 15%;
-}
-@media screen and (max-width: 414px) {
-    .rodape{
-        font-size: 24px;
-        display: block;
-        justify-content: space-between;
-        background: url(img/rodapemiku.png);
-        background-position: 50%;
-    }
-    .rosto{
-        margin: 0;
-        width: 40%;
-        height: 42%;
-    }
-}
+
 .instrucao{
     display: list-item;
     margin: 12px 12px 12px 12px;
@@ -232,7 +139,7 @@ header{
         height: 100%;
     }
 }
-.produtos{
+.produtos {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
@@ -255,6 +162,7 @@ header{
    height: var(--tamanho-h);
 }
 .produto_descricao{
+    color:aliceblue;
     font-size: 18px;
 }
 .money{
@@ -273,12 +181,42 @@ header{
     font-size: 16px;
     cursor: pointer;
 }
+
 @media screen and (max-width: 414px) {
-    .produtos{
+
+    .produto{
         display: block;
     }
     .produto:hover{
         padding: 16px 60px;
         background-color: #1d4464;
     }
+}
+
+.listaDeCompra ul{
+    display: list-item;
+    background-color: #0ca1c733;
+    margin: 27px;
+    border-radius: 16px;
+}
+
+.listaDeCompra li{
+    color: #ff0000;
+    margin: 12px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: large;
+    
+}
+.comprar_lista{
+    position:relative;
+    background-color: #01566b; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
 }
