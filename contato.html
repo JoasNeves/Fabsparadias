@@ -35,27 +35,24 @@
             <h2 class="instrucao_titulo">Entre em contato com A padaria Fabs, a Confeiteria</h2>
         </section>
         <section class="infos">
-            <div class="list__infos">
-                <input type="radio" id="contactChoice1" name="contact" value="email" checked>
-                <label for="Choice1">Email</label>
-                <input type="radio" id="contactChoice2" name="contact" value="phone">
-                <label for="Choice2">Telefone</label>
-                <input type="radio" id="contactChoice3" name="contact" value="mail">
-                <label for="Choice3">Mail</label>
-            </div>
             <ul class="email">
-                <input type="text" name="nome" id="email" placeholder="Seu Nome e Sobrenome vem aqui :D">
-                <input type="email" name="emailue" id="email" placeholder="Seu email vem aqui :D">
-                <input type="button" name="botao" id="mim" value="Envie para mim" class="mim">
-                <script src="index.js"></script>
-            </ul>
+                <input type="text" name="nome" id="email_input" data-texto placeholder="Seu Nome e Sobrenome vem aqui :D" minlength="3">
+                <input type="email" name="emailue" id="email_input" data-email placeholder="Seu email vem aqui :D">
+                <input type="button" name="botao" id="mim" data-botao value="Envie para mim" class="mim">
 
-        </section>
+            </ul>
+        </section> 
+        
+            <section class="imagem_discricao">
+                <img src="img/Thumbnail_expert2.png" alt="imagem ilustrativa" class="promo_imagem">
+                <img src="img/e8dcb026-3547-41dc-81b4-b14db42a5667-clean-sept-alcool-em-gel-500ml.webp" alt="imagem ilustrativa" class="alco_imagem">
+            </section>
         <section>
             <div class="contagem">
                 <p>Ainda não esta fucionando</p>
                 <p>Cotinuamos não fucionando, porem estamos animados com a possibilidade de nunca fucionar em breve, mas
                     conseguimos realmente uma maneira de contata-los.</p>
+                <p>Sendo sincero, eu tentei, tentei muito, mas não consegui, talvez num futuro eu tente, mas por hoje so quero minha cama ;=; </p>
             </div>
         </section>
         <section class="burro">
@@ -64,6 +61,7 @@
                     pão.😎</p>
             </div>
         </section>
+
     </main>
 
     <footer class="rodape">
@@ -75,9 +73,14 @@
             <p class="patrocinador">Um oferecimento S3nha.</p>
             <a href="https://twitter.com/OYoyatsu" class="twitter"></a>
             <a href="https://www.instagram.com/rivomeu/"><img src="img/rosto.png" alt="rosto estranho do Fabs"
-                    class="rosto"></a>
+            class="rosto"></a>
         </div>
     </footer>
+
+    <script src="email.min.js"></script>
+    <script src="https://cdn.sendgrid.com/emailjs/6.6.1/email.min.js"></script>
+    <script src="email.js"></script>
+
 </body>
 
 </html>

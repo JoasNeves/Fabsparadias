@@ -31,15 +31,15 @@ const nomesProdutos = {
   }
   
   const precoProdutos = {
-    comprarpao: 5.99,
-    comprarcuuk: 2.50,
-    comprartorta: 8.99,
-    comprarbiscoito: 4.50,
-    comprarcoixinha: 3.99,
-    comprarmiku: 6.99,
-    cao1: 19.36,
-    mikuAlbum: 9.99,
-    cao2: 90.10
+    comprarpao: 10.99,
+    comprarcuuk: 15.99,
+    comprartorta: 32.99,
+    comprarbiscoito: 9.99,
+    comprarcoixinha: 4.80,
+    comprarmiku: 999.99,
+    cao1: 11.99,
+    mikuAlbum: 90.99,
+    cao2: 9.99
   };
 
 var listaDeProdutos = [];

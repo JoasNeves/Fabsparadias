@@ -4,7 +4,7 @@
 
 :root{
     --color-menu: #92E5FF;
-    --color-fundo: rgba(146, 229, 255, 0.47);
+    --color-fundo: #92e5ff78;
     --fonte-titulo: 'Arizonia', cursive;
     --tamanho-w: 275px;
     --tamanho-h: 263px;
@@ -63,7 +63,6 @@ body{
         display: none;
     }
 }
-
 .instrucao{
     display: list-item;
     margin: 12px 12px 12px 12px;
@@ -84,12 +83,17 @@ body{
 .list__infos input{
     align-self:baseline;
 }
-#email{
-    margin: 12px 12px 12px 12px;
-    width: 30%;
+.email{
+    display: grid;
+    justify-content: center;
+}
+#email_input{
+    margin: 12px 0px 12px 0px;
+    width: 290px;
     height: 42px;
 }
 #mim{
+    margin: 12px 12px 12px 12px;
     height: 42px;
     background: #641d5e;
     border-radius: 18px;
@@ -102,6 +106,19 @@ body{
 .contagem{
     font-family:  Arial, Helvetica, sans-serif;
     margin: 12px 12px 12px 12px;
+}
+.imagem_discricao{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.alco_imagem{
+    height: 84px;
+}
+.promo_imagem{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .burro{
     margin: 12px 12px 12px 12px;
@@ -117,6 +134,9 @@ body{
         margin: 12px 12px 12px 12px;
         width: 90%;
         height: 42px;
+    }
+    .promo_imagem{
+        display: none;
     }
 
 }
@@ -184,6 +204,10 @@ body{
 
 @media screen and (max-width: 414px) {
 
+    .produtos{
+        display: flex;
+        flex-direction: column;
+    }
     .produto{
         display: block;
     }
